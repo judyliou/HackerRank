@@ -6,5 +6,4 @@ def minimumSwaps(arr):
             arr[arr[i]-1] = arr[i]
             arr[i] = temp
             swap += 1
-            
     return swap
