@@ -3,7 +3,7 @@ def triplets(a, b, c):
     b = sorted(list(set(b)))
     c = sorted(list(set(c)))
     
-    p1, p3 = 0, 0
+    p1, p3 = 0, 0 
     cnt = 0
     for i in range(len(b)):
         while p1 < len(a):
