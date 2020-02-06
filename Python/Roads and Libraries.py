@@ -5,7 +5,7 @@ def roadsAndLibraries(n, c_lib, c_road, cities):
     # construct adjacency list
     neighbor = {}
     for c in cities:
-        neighbor[c[0]-1] = neighbor.get(c[0]-1, []) + [c[1]-1]
+        neighbor[c[0]-1] = neighbor.get(c[0]-1, []) + [c[1]-1] # minus 1 because city id start from 1
         neighbor[c[1]-1] = neighbor.get(c[1]-1, []) + [c[0]-1]
     
     visited = [False] * n
